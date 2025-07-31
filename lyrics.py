@@ -20,19 +20,19 @@ def display_lyrics_timed():
     # (thời gian tính bằng giây từ đầu bài hát)
     lyrics_with_timestamps = [
         (0.00, "Tình yêu anh như nắng đợi", Fore.CYAN),
-        (2.50, "Tìm về nhau giữa chân mây", Fore.CYAN),
-        (5.00, "Dặn lòng không thể lấp đầy", Fore.CYAN),
-        (7.50, "Em đi vội chẳng giữ lấy", Fore.CYAN),
-        (10.00, "Phải chi anh là kẻ tồi, rời bỏ đi lúc yêu thôi", Fore.YELLOW),
-        (12.50, "Thì đôi môi đâu thấy", Fore.YELLOW),
-        (15.00, "Con tim đơn côi dối lòng chẳng buông.", Fore.YELLOW),
-        (17.50, "Trả lại em những nỗi buồn", Fore.RED),
-        (20.00, "Trả lại những niềm đau", Fore.RED),
-        (22.50, "Cả những vết thương sâu", Fore.RED),
-        (25.00, "Thêm bao lâu thì người sẽ thấu", Fore.RED),
-        (27.50, "Trả lại em những ước nguyện", Fore.BLUE),
-        (30.00, "Trả em lúc bình yên", Fore.BLUE),
-        (32.50, "Cả giây phút thiêng liêng, Bên hiên ôm nắng chiều khẽ rơi", Fore.BLUE)
+        (2.20, "Tìm về nhau giữa chân mây", Fore.CYAN),
+        (4.40, "Dặn lòng không thể lấp đầy", Fore.CYAN),
+        (6.60, "Em đi vội chẳng giữ lấy", Fore.CYAN),
+        (9.50, "Phải chi anh là kẻ tồi, rời bỏ đi lúc yêu thôi", Fore.YELLOW),
+        (11.0, "Thì đôi môi đâu thấy", Fore.YELLOW),
+        (14.50, "Con tim đơn côi dối lòng chẳng buông.", Fore.YELLOW),
+        (17.00, "Trả lại em những nỗi buồn", Fore.RED),
+        (19.60, "Trả lại những niềm đau", Fore.RED),
+        (22.10, "Cả những vết thương sâu", Fore.RED),
+        (24.00, "Thêm bao lâu thì người sẽ thấu", Fore.RED),
+        (26.70, "Trả lại em những ước nguyện", Fore.BLUE),
+        (28.10, "Trả em lúc bình yên", Fore.BLUE),
+        (29.85, "Cả giây phút thiêng liêng, Bên hiên ôm nắng chiều khẽ rơi", Fore.BLUE)
     ]
 
     print("Chuẩn bị hiển thị lyrics... Hãy bật nhạc lên!")
@@ -47,7 +47,7 @@ def display_lyrics_timed():
         if current_elapsed_time < timestamp:
             time.sleep(timestamp - current_elapsed_time)
             
-        typewriter_effect(line, delay=0.05, color=color)
+        typewriter_effect(line, delay=0.035, color=color)
 
 def main():
     while True:
